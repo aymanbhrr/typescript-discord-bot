@@ -26,7 +26,7 @@ export default class {
     data = await this.rest.put(Routes.applicationCommands(this.client.config.client_id), { body: this.client._applicationCommands.map(c => c.data) });
    else throw new RangeError('Invalid deployment type. Expected "guild" or "global".');
 
-   console.info(`${Fg.makeMagneta("[DEV] [SLASH] :")} Registered ${Fg.makeYellow(data.length)} ${options.deployment}-based (/) commands.`);
+   console.info(`${Fg.makeMagneta("[SLASH] :")} Registered ${Fg.makeYellow(data.length)} ${options.deployment}-based (/) commands.`);
   } catch (error) {
    throw error;
   }

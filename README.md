@@ -10,7 +10,7 @@ To begin, create a folder called `data` in your root directory, inside that `dat
 ```json
 {
  "client_id": "YOUR_CLIENT_ID",
- "_token": "YOUR_BOT_TOKEN_ID",
+ "_token": "YOUR_BOT_TOKEN",
  "_dbKey": "YOUR_MONGODB_KEY",
  "_defaultPrefix": ">>",
  "guilds": {
