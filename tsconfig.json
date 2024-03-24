@@ -1,0 +1,29 @@
+{
+ "compilerOptions": {
+  "target": "ES2022",
+  "module": "CommonJS",
+  "moduleResolution": "Node",
+  "strict": true,
+  "noImplicitAny": true,
+  "declaration": false,
+  "skipLibCheck": true,
+  "strictNullChecks": true,
+  "resolveJsonModule": true,
+  "rootDir": "src",
+  "outDir": "dist",
+  "baseUrl": "./src",
+  "paths": {
+   "@functions/*": ["util/functions/*"],
+   "@models/*": ["util/models/*"],
+   "@appCommands/*": ["appCommands/*"],
+   "@commands/*": ["commands/*"],
+   "@components/*": ["components/*"],
+   "@managers/*": ["managers/*"]
+  }
+ },
+ "exclude": [
+  "node_modules",
+  "./data",
+  "./.vscode"
+ ]
+}

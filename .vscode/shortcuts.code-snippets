@@ -1,0 +1,71 @@
+{
+ "Command": {
+  "scope": "typescript",
+  "prefix": "cmd",
+  "body": [
+   "import * as Discord from \"discord.js\";",
+   "import ClientManager from \"../../managers/clientManager\";\n",
+   "export default {",
+   " name: \"\",",
+   " aliases: [],",
+   " description: \"\",",
+   " usage: \"\",",
+   " isNsfw: false,",
+   " dev: false,",
+   " cooldown: null,",
+   " disabled: false,\n",
+   " async run(bot: ClientManager, message: Discord.Message): Promise<any> {}",
+   "}",
+   ""
+  ],
+  "description": "Deploys a command's code model."
+ },
+
+ "Slash Command": {
+  "scope": "typescript",
+  "prefix": "slash",
+  "body": [
+   "import * as Discord from \"discord.js\";",
+   "import ClientManager from \"../../managers/clientManager\";\n",
+   "export default {",
+   " data: new Discord.SlashCommandBuilder()",
+   "  .setName(\"\")",
+   "  .setDescription(\"\"),",
+   " cooldown: null,",
+   " dev: false,",
+   " disabled: false,\n",
+   " async autoComplete(bot: ClientManager, interaction: Discord.AutocompleteInteraction): Promise<any> {},",
+   " async run(bot: ClientManager, interaction: Discord.CommandInteraction): Promise<any> {}",
+   "}",
+   ""
+  ],
+  "description": "Deploys a Slash Command's code model."
+ },
+
+ "Component": {
+  "scope": "typescript",
+  "prefix": "comp",
+  "body": [
+   "import * as Discord from \"discord.js\";",
+   "import ClientManager from \"../../managers/clientManager\";\n",
+   "export default {",
+   " id: \"\",",
+   " cooldown: null,\n",
+   " async execute(bot: ClientManager, component: Discord.MessageComponentInteraction): Promise<any> {}",
+   "}",
+   ""
+  ],
+  "description": "Deploys a component's code model."
+ },
+
+ "Event": {
+  "scope": "typescript",
+  "prefix": "event",
+  "body": [
+   "import ClientManager from \"../../managers/clientManager\";\n",
+   "export default async (bot: ClientManager): Promise<any> => {}",
+   ""
+  ],
+  "description": "Deploys an event's code model."
+ }
+}

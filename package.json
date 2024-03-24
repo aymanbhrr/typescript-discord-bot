@@ -1,0 +1,32 @@
+{
+ "name": "angelus-ts",
+ "version": "1.0.0",
+ "description": "",
+ "main": "dist/index.js",
+ "_moduleAlias": {
+  "@functions": "dist/util/functions/",
+  "@models": "dist/util/models/",
+  "@appCommands": "dist/appCommands/",
+  "@commands": "dist/commands/",
+  "@components": "dist/components/",
+  "@managers": "dist/managers/"
+ },
+ "scripts": {
+  "dev": "tsx watch src/index.ts",
+  "build": "tsc",
+  "start": "node ."
+ },
+ "keywords": [],
+ "author": "",
+ "license": "ISC",
+ "dependencies": {
+  "discord.js": "^14.14.1",
+  "fs": "^0.0.1-security",
+  "mongoose": "^8.2.3",
+  "pretty-ms": "^7.0.1"
+ },
+ "devDependencies": {
+  "@types/node": "^20.11.30",
+  "tsx": "^4.7.1"
+ }
+}
