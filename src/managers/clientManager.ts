@@ -29,7 +29,9 @@ export default class extends Discord.Client {
  }
 
  async setup(): Promise<void> {
-  await new EventManager(this).All();
+  const events = new EventManager(this);
+  await events.initClientEvents();
+  await events.initDbConnectionEvents();
 
   await this.db.connect(this.config._dbKey);
   await this.login(this.config._token);
