@@ -3,14 +3,6 @@
  "version": "1.0.0",
  "description": "",
  "main": "dist/index.js",
- "_moduleAlias": {
-  "@functions": "dist/util/functions/",
-  "@models": "dist/util/models/",
-  "@appCommands": "dist/appCommands/",
-  "@commands": "dist/commands/",
-  "@components": "dist/components/",
-  "@managers": "dist/managers/"
- },
  "scripts": {
   "dev": "tsx watch src/index.ts",
   "build": "tsc",
